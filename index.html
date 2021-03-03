@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+	<style>
+		body
+		{
+			width: 100%;
+			background-image: url(r1.jpg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		div
+		{
+			width: 800px;
+			padding: 30px;
+			background-color: rgba(86, 185, 231, 0.3);
+			color:  rgb(32, 121, 236);
+			margin:100px auto;
+			border-radius: 50px;
+			box-shadow: 0 0 20px white;
+		}
+		h2
+		{
+			margin-top: 30px;
+			text-align: center;
+			color: rgb(200,150,200);
+			font-weight: bold;
+		}
+		#abc
+		{
+			margin:auto;
+			width: 40%;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		textarea
+		{
+			padding: 10px;
+			border-radius: 10px;
+			border:none;
+			outline: none;
+			background: none;
+			border-bottom: 3px solid  rgb(32, 121, 236);
+			color: whit rgb(32, 121, 236)e;
+		}
+		select
+		{
+			padding: 10px;
+			border-radius: 10px;
+			width: 190px;
+			border:none;
+			outline:none;
+			background: none;
+			border-bottom: 3px solid  rgb(32, 121, 236);
+			color: rgb(32, 121, 236);
+		}
+		select option
+		{
+			background-color: black;
+			color:  rgb(32, 121, 236);
+		}
+		input[type="Submit"],
+		input[type="Reset"]
+		{
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			width: 100px;
+			border:none;
+			outline:none;
+			background: linear-gradient(45deg,rgb(158, 229, 241),rgb(221, 204, 46),coral);
+			color: white;
+			font-weight: bold;
+		}
+		input[type="Submit"]:hover
+		{
+			color: rgb(236, 152, 152);
+			box-shadow:0 0 10px rgb(117, 117, 238);
+		}
+		input[type="Reset"]:hover
+		{
+			color: rgb(241, 128, 128);
+			box-shadow: 0 0 10px rgb(128, 128, 230);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2>Student Name:Shakti</h2>
+		<h2>Student Id:009</h2>
+		<hr>
+		<h2>Registration Form</h2>
+		<hr>
+		<form>
+			<table id="abc">
+				<tr>
+					<td><label>Name:</label></td>
+					<td><input type="text" placeholder="Enter Name Here"></td>
+					<td><label>CNIC:</label></td>
+					<td><input type="text" placeholder="Enter CNIC"></td>
+				</tr>
+				<tr>
+					<td><label>Course:</label></td>
+					<td><input type="text" placeholder="Enter Course Name"></td>
+					<td><label>Session:</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label>E-Mail:</label></td>
+					<td><input type="email" placeholder="example@gmail.com"></td>
+					<td><label>Password:</label></td>
+					<td><input type="password" placeholder="Enter Password"></td>
+				</tr>
+				<tr>
+					<td><label>Address:</label></td>
+					<td><textarea cols="20" rows="5" placeholder="Enter Address"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Gender:</label></td>
+					<td><input type="radio" name="r1">Male <input type="radio" name="r1">Female</td>
+				</tr>
+				<tr>
+					<td><label>City:</label></td>
+					<td>
+						<select>
+							<option>---Select---</option>
+							<option>Bangalore</option>
+							<option>Odisha</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="4"><input type="Submit"> <input type="Reset"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
